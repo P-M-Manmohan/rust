@@ -11,8 +11,9 @@ fn main() {
         let points: u32=(speed-90)/5;
         if points > 5 {
             println!("You're dead to us")
-        }
+        }else{
         println!("You are overspeeding. current points -> {points}");
+        }
     }else{
         println!("Good job following the rules");
     }
