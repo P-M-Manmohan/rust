@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, testing keyring!");
+    println!("Hello, testing key!");
 }
