@@ -1,13 +1,12 @@
-use std::env;
+use clap::Parser;
 
-// #[derive(Parser, Debug)]
-// #[command(version, about, long_about = None)]
-// struct Args {
-//     word: String,
-// }
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+struct Args {
+    word: String,
+}
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let word=&args[1];
-    println!("{word}");
+    let args= Args::parse();
+    println!("{}",args.word);
 }
